@@ -44,7 +44,7 @@ app.configure(function () {
 
 app.get('/', function (req, res) {
   console.log("Setting up route using: " + req + ", " + res);
-  res.render('index', { layout: false });
+  res.render('index', { layout: false, 'version': process.version });
 });
 
 /**
